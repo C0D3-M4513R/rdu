@@ -18,8 +18,6 @@ mimalloc = {version = "0.1", optional = true}
 [features]
 mimalloc = ["dep:mimalloc"]
 
-[build]
-rustflags = ["-C", "target-cpu=native"]
 [profile.release]
 lto = "fat"
 strip = "symbols"
